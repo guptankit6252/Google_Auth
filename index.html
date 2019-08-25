@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="390374012249-kahvcb4b2crprpaq201mg05e8plg2ca9.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>  
+  <body>
+    
+    
+  <div class="box">
+		<h2>LOGIN</h2>
+		<form>
+			<div class="inputBox">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			</div>
+			<div class="inputBox">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			</div>
+			<input type="submit" name="" value="Submit">
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+      
+		</form>
+	</div>
+    <div class="data">
+      <p>Profile Details</p>
+      <img id="pic" class="image-circle" width="100px" height="100px">
+      <p>Name:</p>
+      <p id="name" class="text">Name:</p>
+      <p>Email address:</p>
+      <p id="email" class="alert-alert-danger"></p>
+      <button onclick="signOut()" class="btn-btn-danger">Sign out</button>
+    </div>
+  </body>
+</html>
